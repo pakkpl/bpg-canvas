@@ -1,6 +1,8 @@
 # bpg-canvas
 AngularJs directive for decoding BPG images in web workers
 
+Demo: http://bpg-canvas.piercedbone.com
+
 ## How to install
 Copy files `bpg-canvas.min.js` and `bpg-worker.min.js` from `dist` folder and add script reference to your index.html:
 ```html
@@ -21,7 +23,7 @@ angular.module('myApp', ['bpgCanvas'])
 Optionaly you can use `on-complete` event - see example app.
 
 ## Limitations
-Not works with 8 bit images and animations.
+Not works with animations and 8 bits images.
 
 ## Licence
 The MIT License (MIT)
