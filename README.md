@@ -20,6 +20,9 @@ angular.module('myApp', ['bpgCanvas'])
 ```
 Optionaly you can use `on-complete` event - see example app.
 
+## Limitations
+Not works with 8 bit images and animations.
+
 ## Licence
 The MIT License (MIT)
 
