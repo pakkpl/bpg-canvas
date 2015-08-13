@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="../dist/bpg-canvas.min.js"></script>
+    <script src="app.js"></script>
+    <title></title>
+</head>
+<body ng-app="example">
+<div ng-controller="exampleCtrl">
+    <button ng-click="hideShowCanvas()">Hide/show canvas</button>
+    <button ng-click="clearImage()">Clear image</button>
+    <button ng-click="loadNextImage()">Load next image</button>
+    <p>
+        {{infoText}}
+    </p>
+
+    <div ng-if="showCanvas">
+        <bpg-canvas src="{{imageSrc}}" on-complete="onLoadingComplete(error)"/>
+    </div>
+</div>
+</body>
+</html>
