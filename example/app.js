@@ -21,7 +21,6 @@ angular.module('example', ['bpgCanvas'])
             $scope.showCanvas = true;
             $scope.infoText = 'loading...';
             $scope.imageSrc = getNextImageSrc();
-            startDate = new Date();
         };
 
         $scope.clearImage = function () {
@@ -33,7 +32,6 @@ angular.module('example', ['bpgCanvas'])
         $scope.hideShowCanvas = function () {
             $scope.showCanvas = !$scope.showCanvas;
             $scope.infoText = 'no canvas';
-            startDate.push(new Date());
         };
 
         $scope.onLoadingComplete = function (error) {
