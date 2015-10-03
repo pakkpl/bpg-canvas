@@ -8,7 +8,7 @@ Copy files `bpg-canvas.min.js` and `bpg-worker.min.js` from `dist` folder and ad
 ```html
 <script src="/js/bpg-canvas.min.js"></script>
 ```
-Then add `bpgCanvas` as a dependency for your app and optional constant `bpgCanvasWorkerUrl` (if path to `bpg-worker.min.js` is different than default `/js/bpg-worker.min.js`)
+Then add `bpgCanvas` as a dependency for your app and optional constant `bpgCanvasWorkerUrl` (if your path to `bpg-worker.min.js` is different than default `/js/bpg-worker.min.js`)
 ```javascript
 angular.module('myApp', ['bpgCanvas'])
 .constant('bpgCanvasWorkerUrl', '/somePath/bpg-worker.min.js');
@@ -23,7 +23,7 @@ angular.module('myApp', ['bpgCanvas'])
 Optionaly you can use `on-complete` event - see example app.
 
 ## Limitations
-Not works with animations and 8 bits images.
+Not work with animations and 8 bits images.
 
 ## Licence
 The MIT License (MIT)
